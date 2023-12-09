@@ -19,6 +19,7 @@ header {
   align-items: center;
   padding: 20px 150px;
   width: 100vw;
+  height: 9vh;
 }
 .ham {
   display: none;
@@ -68,6 +69,25 @@ header nav ul a:hover {
   border-bottom: 2px solid #c9f31d;
   padding: 1px 0;
   cursor: pointer;
+}
+.mobile-menu {
+  visibility: hidden;
+  position: absolute;
+}
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+}
+.show {
+  visibility: visible;
 }
 /* Background Animation */
 .animate {
@@ -549,9 +569,41 @@ footer a:hover {
   transition: ease-in-out750ms;
 }
 
+#home, #about, #skills, #portfolio, #projects, #contact {
+  min-height: 100vh;
+}
+
 @media screen and (max-width: 1024px) {
+  header {
+    padding: 20px 5%;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 3em;
+  }
   nav {
       display: none;
+  }
+  .mobile-menu {
+    position: absolute;
+    background-color: #070707;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .close {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    font-size: 2em;
+    cursor: pointer;
   }
   .call-to-action {
       flex-direction: column;
@@ -576,7 +628,7 @@ footer a:hover {
   }
   .ham {
       display: inline-block;
-      margin-right: -300px;
+      /* margin-right: -300px; */
       font-size: 1.4em;
       cursor: pointer;
   }
@@ -658,4 +710,109 @@ footer a:hover {
     flex-direction: column;
     gap: 1em;
   }
+}
+@media screen and (max-width: 870px) {
+  .home {
+    top: 30px;
+    min-height: 149vh;
+    flex-flow: column wrap;
+  }
+}
+@media screen and (max-width: 546px) {
+  .home {
+    top: 30px;
+    height: fit-content;
+    flex-flow: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .home .user-info {
+    width: 100%;
+  }
+  .home img {
+    width: 25em;
+  }
+  .home .user-image {
+    width: 100%;
+  }
+  .user-right {
+    padding-top: 0px;
+  }
+  .home .user-experience {
+    width: 90vw;
+  }
+  .resume {
+    padding: 0px 5% 20px;
+    height: fit-content;
+    width: 100%;
+  }
+  .resume .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .resume img {
+    width: 200px;
+  }
+  .resume h2 {
+    font-size: 1.8em;
+  }
+  .resume .details {
+    gap: 10px;
+  }
+  .resume .timeline {
+    width: 100%;
+  }
+  .skill {
+    padding: 40px 5%;
+  }
+
+  .skill .right {
+    grid-template-columns: repeat(2, 1fr);
+    height: fit-content;
+    width: 100%;
+  }
+  .card {
+    padding: 20px;
+  }
+  .skill .right .card:hover {
+    cursor: pointer;
+    color: #c9f31d;
+    border: 2px solid #c9f31d;
+    transition: all 450ms;
+  }
+  .projects {
+    padding: 40px 5%;
+  }
+  .projects .top {
+    font-size: 1.2em;
+  }
+  .projects h2 {
+    font-size: 1.2em;
+  }
+  .projects h2 span {
+    padding-left: 5px;
+  }
+  .contact {
+    padding: 40px 5%;
+    background-color: #131313cc;
+  }
+  .form {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+  .form div {
+    width: 100%;
+  }
+  .form input {
+    width: 100%;
+  }
+  .form textarea {
+    width: 90vw;
+  }
+  footer {
+    padding: 20px 5%;
+    font-size: 0.9em;
+    align-items: start;
+  }
+
 }

@@ -6,7 +6,7 @@ function Projects() {
         <div className="projects" id='projects'>
             <div className="top">
                 <h5>Latest Works</h5>
-                <h2>Explore my Popular <span>Projects</span></h2>
+                <h2>Explore my Popular <span> Projects</span></h2>
             </div>
             
             <div className="project-left">
