@@ -12,6 +12,7 @@ import Skills from './components/skill'
 
 function App() {
   return (
+    <>
       <Header />
       <Animate />
       <Home />
@@ -21,6 +22,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+    </>
   )
 }
 
