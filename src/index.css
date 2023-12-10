@@ -125,8 +125,8 @@ header nav ul a:hover {
   justify-content: center;
   align-items: center;
   background-color: #c9f31d;
-  min-height: 50px;
-  min-width: 50px;
+  min-height: 45px;
+  min-width: 45px;
   border-radius: 50%;
 }
 /* Home/Hero design */
@@ -137,7 +137,7 @@ header nav ul a:hover {
   padding: 40px 150px 20px;
   position: relative;
   z-index: 2;
-  top: 100px;
+  /* top: 100px; */
   height: 80vh;
 }
 .home img {
@@ -569,19 +569,20 @@ footer a:hover {
   transition: ease-in-out750ms;
 }
 
-#home, #about, #skills, #portfolio, #projects, #contact {
-  min-height: 100vh;
-}
-
 @media screen and (max-width: 1024px) {
   header {
-    padding: 20px 5%;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 1.5%;
+  }
+  .logo h1{
+    font-size: 25px;
   }
   .header-right {
     display: flex;
     align-items: center;
     width: fit-content;
-    gap: 3em;
+    gap: 1em;
   }
   nav {
       display: none;
