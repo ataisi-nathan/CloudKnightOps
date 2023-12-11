@@ -595,7 +595,7 @@ footer a:hover {
     height: 100vh;
     top: 0;
     right: 0;
-    width: 70vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -603,8 +603,8 @@ footer a:hover {
   }
   .close {
     position: absolute;
-    top: 50px;
-    right: 60px;
+    top: 30px;
+    right: 30px;
     font-size: 2em;
     cursor: pointer;
   }
