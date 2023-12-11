@@ -169,6 +169,7 @@ header nav ul a:hover {
   display: flex;
   align-items: center;
   gap: 1.4em;
+  margin-top: 20px;
 }
 .home .user-info .call-to-action button {
   background-color: #c9f31d;
@@ -382,13 +383,14 @@ header nav ul a:hover {
   text-align: center;
 }
 .skill .right img {
-  width: 150px;
+  width: 130px;
 }
 .skill .right .card {
   background-color: #1f1f1f;
   border: 1px solid #2f2f2f;
   border-radius: 20px;
   margin: 10px;
+  width: 150px;
 }
 .projects {
   padding: 80px 300px;
@@ -731,7 +733,7 @@ footer a:hover {
     width: 100%;
   }
   .home img {
-    width: 25em;
+    width: 19em;
   }
   .home .user-image {
     width: 100%;
@@ -742,17 +744,39 @@ footer a:hover {
   .home .user-experience {
     width: 90vw;
   }
+  .about {
+    position: relative;
+    left: -9px;
+    width: 100vw;
+    /* margin: 40px 0; */
+    padding: 100px 10px;
+    flex-direction: column;
+    font-size: 0.9em;
+  }
+  .about .support {
+    width: 100%;
+    padding: 40px;
+  }
+  .about .right img {
+    width: 350px;
+  }
+  .about .float-1, .float-2 {
+    padding: 3px 15px;
+    border-radius: 30px;
+    font-size: 0.9em;
+  }
   .resume {
     padding: 0px 5% 20px;
     height: fit-content;
     width: 100%;
+    font-size: 0.9em;
   }
   .resume .logo {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
   .resume img {
-    width: 200px;
+    width: 150px;
   }
   .resume h2 {
     font-size: 1.8em;
@@ -765,14 +789,20 @@ footer a:hover {
   }
   .skill {
     padding: 40px 5%;
+    font-size: 0.9em;
   }
-
+  .skill .left h2 {
+    font-size: 2.2em;
+  }
+  .skill .left p {
+    font-size: 1em;
+  }
   .skill .right {
     grid-template-columns: repeat(2, 1fr);
     height: fit-content;
     width: 100%;
   }
-  .card {
+  .skill .right .card {
     padding: 20px;
   }
   .skill .right .card:hover {
@@ -792,6 +822,12 @@ footer a:hover {
   }
   .projects h2 span {
     padding-left: 5px;
+  }
+  .projects img {
+    width: 370px;
+  }
+  .project-left .detail {
+    padding: 20px;
   }
   .contact {
     padding: 40px 5%;
