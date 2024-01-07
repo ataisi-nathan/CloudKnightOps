@@ -1,6 +1,38 @@
 import { FaCheck } from "react-icons/fa6";
+import { useState } from "react";
 
 function Contact() {
+    const [fullName, setFullName] = useState(false)
+    const [emailAddress, setEmailAddress] = useState(false)
+    const [phoneNumber, setPhoneNumber] = useState(false)
+    const [subject, setSubject] = useState(false)
+    const [message, setMessage] = useState(false)
+
+    function FormValue() {
+        let fullNameValue = document.querySelector("#fullName").value;
+        let emailAddressValue = document.querySelector("#email").value;
+        let phoneValue = document.querySelector("#phone").value;
+        let subjectValue = document.querySelector("#subject").value;
+        let messageValue = document.querySelector("#message").value;
+
+        if (fullNameValue == "") {
+            setFullName(true);
+
+        }
+        if (emailAddressValue == "") {
+            setEmailAddress(true)
+        }
+        if (phoneValue == "") {
+            setPhoneNumber(true)
+        }
+        if (subjectValue == "") {
+            setSubject(true)
+        }
+        if (messageValue == "") {
+            setMessage(true)
+        }
+    }
+
     return (
         <div className="contact" id="contact">
             <div className="contact-left">
@@ -39,7 +71,7 @@ function Contact() {
                     <div className="form">
                         <div>
                             <label htmlFor="fullName">Full Name</label>
-                            <input type="text" name="fullName" id="fullName" placeholder="Jeff Bezos" />
+                            <input className={fullName ? "not-empty" : "empty"} onChange={FormValue} type="text" name="fullName" id="fullName" placeholder="Jeff Bezos" />
                         </div>
                         <div>
                             <label htmlFor="email">Email Address</label>

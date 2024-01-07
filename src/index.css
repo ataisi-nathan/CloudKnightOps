@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 150px;
+  padding: 20px 5em;
   width: 100vw;
   height: 9vh;
 }
@@ -134,20 +134,20 @@ header nav ul a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 150px 20px;
+  padding: 5em 5em 20px;
   position: relative;
   z-index: 2;
   /* top: 100px; */
   height: 80vh;
 }
 .home img {
-  width: 600px;
+  width: 30em;
 }
 .home .user-info {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  font-size: 1.04em;
+  width: 30vw;
+  font-size: 1.1em;
   padding-top: 100px
 }
 .home .user-info h1 {
@@ -200,8 +200,8 @@ header nav ul a:hover {
   width: fit-content;
   border-radius: 10px;
   border: none;
-  height: fit-content;
-  padding: 10px 30px;
+  height: 100%;
+  padding: 20px 30px;
   background-color: #070707;
 }
 .home .user-experience div {
@@ -527,6 +527,9 @@ header nav ul a:hover {
 .form input:focus, textarea:focus {
   border: 2px solid #c9f31d;
 }
+.empty {
+  border: 2px solid red;
+}
 .contact-right button {
   background-color: #c9f31d;
   height: 60px;
@@ -574,8 +577,8 @@ footer a:hover {
 @media screen and (max-width: 1024px) {
   header {
     height: 10vh;
-    width: 100vw;
-    padding: 0 1.5%;
+    width: 98vw;
+    padding: 0 auto;
   }
   .logo h1{
     font-size: 25px;
@@ -824,7 +827,7 @@ footer a:hover {
     padding-left: 5px;
   }
   .projects img {
-    width: 370px;
+    width: 360px;
   }
   .project-left .detail {
     padding: 20px;
