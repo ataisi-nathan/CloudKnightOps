@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo.jpeg'
 import { FaBars, FaBarsStaggered, FaX } from 'react-icons/fa6'
 
 function Header() {
