@@ -552,7 +552,7 @@ header nav ul a:hover {
   cursor: pointer;
 }
 footer {
-  padding: 30px 300px;
+  padding: 30px 5%;
   position: relative;
   z-index: 2;
   background-color: #070707;
