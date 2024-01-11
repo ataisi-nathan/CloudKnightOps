@@ -1,4 +1,4 @@
-import Theo from '../assets/logo.png';
+import Theo from '../assets/logo.jpeg';
 import { FaAngleRight, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 function Projects() {
@@ -11,7 +11,7 @@ function Projects() {
             
             <div className="project-left">
                 <div className="image">
-                    <img src={Theo} alt="An Image of the project" />
+                    {/* <img src={Theo} alt="An Image of the project" /> */}
                 </div>
                 <div className="detail">
                     <h6>CI/CD</h6>
@@ -22,7 +22,7 @@ function Projects() {
             </div>
             <div className="project-left right">
                 <div className="image">
-                    <img src={Theo} alt="An Image of the project" />
+                    {/* <img src={Theo} alt="An Image of the project" /> */}
                 </div>
                 <div className="detail">
                     <h6>CI/CD</h6>
@@ -33,7 +33,7 @@ function Projects() {
             </div>
             <div className="project-left">
                 <div className="image">
-                    <img src={Theo} alt="An Image of the project" />
+                    {/* <img src={Theo} alt="An Image of the project" /> */}
                 </div>
                 <div className="detail">
                     <h6>CI/CD</h6>
@@ -44,7 +44,7 @@ function Projects() {
             </div>
             <div className="project-left right">
                 <div className="image">
-                    <img src={Theo} alt="An Image of the project" />
+                    {/* <img src={Theo} alt="An Image of the project" /> */}
                 </div>
                 <div className="detail">
                     <h6>CI/CD</h6>

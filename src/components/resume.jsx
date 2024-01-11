@@ -1,5 +1,5 @@
 import { FaSquareArrowUpRight } from 'react-icons/fa6';
-import Theo from '../assets/logo.png'
+import Theo from '../assets/logo.jpeg'
 
 function Resume() {
     return (

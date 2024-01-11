@@ -1,5 +1,5 @@
 import { FaCheck, FaEnvelope, FaCloud, FaAws, FaPhone } from 'react-icons/fa6'
-import Theo from '../assets/logo.png'
+import Theo from '../assets/logo.jpeg'
 
 function About() {
     return (
@@ -58,7 +58,7 @@ function About() {
                 </div>
             </div>
             <div className="right">
-                <img src={Theo} alt="An Image of Theophilus" />
+                {/* <img src={Theo} alt="An Image of Theophilus" /> */}
                 <div className="float-1">
                     <FaCloud size={30}/> Experienced Cloud Engineer
                 </div>

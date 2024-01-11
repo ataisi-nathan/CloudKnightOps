@@ -1,4 +1,4 @@
-import Theo from '../assets/logo.png'
+import Theo from '../assets/logo.jpeg'
 
 function Footer() {
     return (

@@ -1,5 +1,5 @@
 import { FaAngleRight } from "react-icons/fa6";
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo.jpeg'
 
 function Skills() {
     return (

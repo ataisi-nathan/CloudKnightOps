@@ -274,6 +274,11 @@ header nav ul a:hover {
 .about .right {
   position: relative;
   left: 5%;
+  background-image: url("./assets/logo.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .about .right img {
   width: 600px;
@@ -384,6 +389,8 @@ header nav ul a:hover {
 }
 .skill .right img {
   width: 130px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 .skill .right .card {
   background-color: #1f1f1f;
@@ -415,6 +422,10 @@ header nav ul a:hover {
 .projects .image{
   background-color: rgb(105, 106, 107);
   border-radius: 5px;
+  width: 500px;
+  background-image: url("./assets/logo.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 .projects img {
   width: 500px;
