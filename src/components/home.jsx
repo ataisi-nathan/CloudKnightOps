@@ -1,4 +1,5 @@
 import Theo from '../assets/logo.jpeg'
+import Resume from '../assets/Resume_Theophilus_uviekugbere-DevOps-SRE.pdf'
 
 function Home() {
     return (
@@ -10,7 +11,7 @@ function Home() {
                 <p className='details'>We denounce with righteous indignation dislike demoralized by the charms of pleasure</p>
                 <div className="call-to-action">
                     <button>Hire Me</button>
-                    <a href="#">Download Resume</a>
+                    <a href={Resume} download>Download Resume</a>
                 </div>
             </div>
             <div className="user-image">
