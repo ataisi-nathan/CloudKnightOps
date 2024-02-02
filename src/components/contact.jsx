@@ -44,7 +44,7 @@ function Contact() {
                         <span className="circle">
                             <FaCheck color="#000" />
                         </span>
-                        <p>5+ Years Of Experience</p>
+                        <p>4+ Years Of Experience</p>
                     </div>
                     <div>
                         <span className="circle">

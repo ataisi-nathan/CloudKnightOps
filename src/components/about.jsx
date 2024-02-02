@@ -8,7 +8,7 @@ function About() {
                 <p>About Me</p>
                 <h3>Professional <span>Problem Solutions </span> <br /> For Digital Products</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ullam, qui sapiente minus quos ipsa delectus rerum ut quidem, quibusdam aliquid, adipisci sint alias cumque hic accusantium provident dicta itaque!
+                    Possesses a comprehensive background in IT spanning over 4 years, excelled in roles such as DevOps/Cloud Engineering, Site Reliability, System Administration, and Information Security Engineering, demonstrating a commitment to supporting and enhancing core IT infrastructure.
                 </p>
                 <div className="products">
                     <div className="one">

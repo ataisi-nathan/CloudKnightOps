@@ -14,19 +14,34 @@ function Resume() {
                     <div className="first">
                         <span><FaSquareArrowUpRight /></span>
                         <span>
-                            <p>2023 - Present</p>
-                            <h3>Junior Cloud Architect</h3>
-                            <p>MTN Nigeria</p>
+                            <p>July 2023 - Present</p>
+                            <h3>DevOps / Site Reliability Engineer</h3>
+                            <p>ATOS/MTN NG</p>
                         </span>
                     </div>
                     <div className="second">
                         <span>< FaSquareArrowUpRight /></span>
                         <span>
-                            <p>2021 - 2023</p>
-                            <h3>Cloud Engineer</h3>
-                            <p>Jules</p>
+                            <p>Oct 2021 - May 2023</p>
+                            <h3>DevOps Engineer</h3>
+                            <p>HARVOXX TECH HUB</p>
                         </span>
-
+                    </div>
+                    <div className="second">
+                        <span>< FaSquareArrowUpRight /></span>
+                        <span>
+                            <p>Feb 2020 - Jan 2021</p>
+                            <h3>Information Security Engineer, (Intern).</h3>
+                            <p>CANDIX ENGINEERING NIGERIA LIMITED</p>
+                        </span>
+                    </div>
+                    <div className="second">
+                        <span>< FaSquareArrowUpRight /></span>
+                        <span>
+                            <p>July 2019 - Jan 2021</p>
+                            <h3>System/Network Administrator(Academic Industrial Training).</h3>
+                            <p>HARVOXX TECH HUB</p>
+                        </span>
                     </div>
                 </div>
             </div>

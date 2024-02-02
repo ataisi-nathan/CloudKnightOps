@@ -141,7 +141,7 @@ header nav ul a:hover {
   height: 80vh;
 }
 .home img {
-  width: 30em;
+  width: 100%;
 }
 .home .user-info {
   display: flex;
@@ -303,7 +303,7 @@ header nav ul a:hover {
 .resume {
   display: flex;
   padding: 50px 300px;
-  height: 80vh;
+  height: fit-content;
   gap: 2em;
   position: relative;
   z-index: 2;
@@ -399,6 +399,10 @@ header nav ul a:hover {
   margin: 10px;
   width: 150px;
 }
+.skill .tool {
+  height: 80%;
+  font-size: 5em;
+}
 .projects {
   padding: 80px 300px;
   position: relative;
@@ -453,7 +457,7 @@ header nav ul a:hover {
   font-weight: 900;
 }
 .contact {
-  padding: 80px 300px;
+  padding: 80px 5em;
   display: flex;
   gap: 2em;
   position: relative;
@@ -729,6 +733,9 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 870px) {
+  header {
+    padding: 0 5%;
+  }
   .home {
     top: 30px;
     min-height: 149vh;

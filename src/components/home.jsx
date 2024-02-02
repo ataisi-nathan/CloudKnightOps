@@ -19,16 +19,16 @@ function Home() {
             <div className="user-right">
                 <div className="user-experience">
                     <div className="years">
-                        <h3>5</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                    <div className="projects-completed">
-                        <h3>200+</h3>
-                        <p>Projects Completed</p>
+                        <h3>4+</h3>
+                        <p>Years of IT Experience</p>
                     </div>
                     <div className="client-satisfaction">
-                        <h3>99%</h3>
-                        <p>Client Satisfaction</p>
+                        <h3>3+</h3>
+                        <p>DevOps/SRE Experience</p>
+                    </div>
+                    <div className="projects-completed">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
                     </div>
                 </div>
             </div>
