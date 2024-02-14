@@ -652,7 +652,7 @@ footer a:hover {
   .about .support {
     flex-direction: column;
     width: fit-content;
-    padding: 30px 70px;
+    padding: 20px;
   }
   .ham {
       display: inline-block;

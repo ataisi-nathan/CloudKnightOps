@@ -5,8 +5,8 @@ function About() {
     return (
         <div className="about" id='about'>
             <div className="left">
-                <p>About Me</p>
-                <h3>Professional <span>Problem Solutions </span> <br /> For Digital Products</h3>
+                <h3>About Me</h3>
+                {/* <h3>Professional <span>Problem Solutions </span> <br /> For Digital Products</h3> */}
                 <p>
                     Theophilus Uviekugbere is a seasoned DevOps Engineer with 4+ years of expertise in IT. He excels in supporting and managing core business APIs and Microservices, implementing end-to-end monitoring solutions, and deploying AWS infrastructure. Proficient in CI/CD, containerization, and scripting, he currently serves as a DevOps/Site Reliability Engineer at ATOS/MTN NG, contributing to issue resolution, automation, and infrastructure migration. Theophilus holds a B.Eng. in Electrical/Electronic Engineering, Udacity Nano-Degree in Cloud DevOps Engineering, and certifications in AWS. His commitment to learning is evident through various online courses in cloud-native applications, Kubernetes, and cybersecurity.
                 </p>
