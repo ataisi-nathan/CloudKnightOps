@@ -225,6 +225,7 @@ header nav ul a:hover {
   margin: 80px 150px;
   height: fit-content;
   padding: 150px;
+  gap: 2em;
 }
 .about .left {
   display: flex;
@@ -274,7 +275,7 @@ header nav ul a:hover {
 }
 .about .right {
   position: relative;
-  left: 5%;
+  /* left: 5%; */
   background-image: url("./assets/logo.jpeg");
   background-position: center;
   background-size: cover;
@@ -320,8 +321,9 @@ header nav ul a:hover {
   background-color: #1f1f1f;
   border: 1px solid #2f2f2f;
 }
-.resume img {
-  width: 400px;
+.resume .logo img {
+  width: 100%;
+  border-radius: 50%;
 }
 .resume .details {
   display: flex;
@@ -643,9 +645,9 @@ footer a:hover {
       height: fit-content;
       flex-direction: column ;
   }
-  .about .right {
+  /* .about .right {
       left: 3%;
-  }
+  } */
   .about .right img {
       width: 450px;
   }
@@ -670,6 +672,7 @@ footer a:hover {
   }
   .home .user-info {
     width: 60%;
+    font-size: 1em;
   }
   .home .call-to-action {
     display: flex;
@@ -751,7 +754,7 @@ footer a:hover {
 }
 @media screen and (max-width: 546px) {
   .home {
-    top: 30px;
+    top: 0px;
     height: fit-content;
     flex-flow: column;
     padding-left: 5%;
@@ -759,9 +762,16 @@ footer a:hover {
   }
   .home .user-info {
     width: 100%;
+    font-size: 1em;
+  }
+  .home .user-info h1 {
+    font-size: 50px;
+  }
+  .home .user-info .position {
+    font-size: 35px;
   }
   .home img {
-    width: 19em;
+    width: 100%;
   }
   .home .user-image {
     width: 100%;
@@ -773,20 +783,20 @@ footer a:hover {
     width: 90vw;
   }
   .about {
-    position: relative;
-    left: -9px;
-    width: 100vw;
-    /* margin: 40px 0; */
-    padding: 100px 10px;
+    /* position: relative;
+    left: -9px; */
+    width: 100%;
+    padding: 100px 0px;
     flex-direction: column;
     font-size: 0.9em;
   }
   .about .support {
-    width: 100%;
-    padding: 40px;
+    width: 140%;
+    padding: 10px;
+    margin: 0px -50px 20px;
   }
   .about .right img {
-    width: 100%;
+    width: 150%;
   }
   .about .float-1, .float-2 {
     padding: 3px 15px;
@@ -854,6 +864,9 @@ footer a:hover {
   .projects img {
     width: 360px;
   }
+  .project-left {
+    width: 100%;
+  }
   .project-left .detail {
     padding: 20px;
   }
@@ -876,7 +889,8 @@ footer a:hover {
   }
   footer {
     padding: 20px 5%;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    gap: 2em;
     align-items: start;
   }
 

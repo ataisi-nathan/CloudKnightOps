@@ -5,9 +5,11 @@ function Home() {
     return (
         <div className="home" id='home'>
             <div className="user-info">
-                <p className='hello'>Hello, I'm</p>
-                <h1>Theophilus U.</h1>
-                <p className='position'>DevOps Engineer</p>
+                <span>
+                    <p className='hello'>Hello, I'm</p>
+                    <h1>Theophilus U.</h1>
+                    <p className='position'>DevOps Engineer</p>
+                </span>
                 <p className='details'>We denounce with righteous indignation dislike demoralized by the charms of pleasure</p>
                 <div className="call-to-action">
                     <button>Hire Me</button>
