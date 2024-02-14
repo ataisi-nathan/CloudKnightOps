@@ -223,7 +223,7 @@ header nav ul a:hover {
   background-color: #070707;
   position: relative;
   margin: 80px 150px;
-  height: 90vh;
+  height: fit-content;
   padding: 150px;
 }
 .about .left {
@@ -231,10 +231,14 @@ header nav ul a:hover {
   flex-direction: column;
   justify-content: space-between;
   gap: 2em;
+  width: 65%;
 }
 .about .left h3 {
   font-size: 30px;
   font-weight: 900;
+}
+.about .left p {
+  text-align: justify;
 }
 .about .left span {
   color: #c9f31d;
@@ -277,11 +281,11 @@ header nav ul a:hover {
   background-image: url("./assets/logo.jpeg");
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 35%;
   height: 100%;
 }
 .about .right img {
-  width: 600px;
+  width: 100%;
 }
 .about .float-1, .float-2 {
   display: flex;
@@ -291,14 +295,15 @@ header nav ul a:hover {
   position: absolute;
   padding: 8px 15px;
   border-radius: 30px;
+  font-size: 0.7em;
 }
 .float-1 {
-  top: 60%;
+  top: 56%;
   left: 8%;
 }
 .float-2 {
-  top: 75%;
-  left: 0%;
+  top: 78%;
+  left: 1%;
 }
 .resume {
   display: flex;
@@ -563,7 +568,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 footer img {
   width: 50px;
@@ -619,6 +624,10 @@ footer a:hover {
     justify-content: space-evenly;
     align-items: center;
   }
+  .home {
+    padding: 0em 5em 20px;
+    gap: 1em;
+  }
   .close {
     position: absolute;
     top: 30px;
@@ -635,6 +644,7 @@ footer a:hover {
       margin: 50px 10px;
       flex-direction: column;
       height: fit-content;
+      flex-direction: column ;
   }
   .about .right {
       left: 3%;

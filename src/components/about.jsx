@@ -8,7 +8,7 @@ function About() {
                 <p>About Me</p>
                 <h3>Professional <span>Problem Solutions </span> <br /> For Digital Products</h3>
                 <p>
-                    Possesses a comprehensive background in IT spanning over 4 years, excelled in roles such as DevOps/Cloud Engineering, Site Reliability, System Administration, and Information Security Engineering, demonstrating a commitment to supporting and enhancing core IT infrastructure.
+                    Theophilus Uviekugbere is a seasoned DevOps Engineer with 4+ years of expertise in IT. He excels in supporting and managing core business APIs and Microservices, implementing end-to-end monitoring solutions, and deploying AWS infrastructure. Proficient in CI/CD, containerization, and scripting, he currently serves as a DevOps/Site Reliability Engineer at ATOS/MTN NG, contributing to issue resolution, automation, and infrastructure migration. Theophilus holds a B.Eng. in Electrical/Electronic Engineering, Udacity Nano-Degree in Cloud DevOps Engineering, and certifications in AWS. His commitment to learning is evident through various online courses in cloud-native applications, Kubernetes, and cybersecurity.
                 </p>
                 <div className="products">
                     <div className="one">
@@ -58,7 +58,7 @@ function About() {
                 </div>
             </div>
             <div className="right">
-                {/* <img src={Theo} alt="An Image of Theophilus" /> */}
+                <img src={Theo} alt="An Image of Theophilus" />
                 <div className="float-1">
                     <FaCloud size={30}/> Experienced Cloud Engineer
                 </div>
