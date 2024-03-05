@@ -8,12 +8,12 @@ function Home() {
                 <span>
                     <p className='hello'>Hello, I'm</p>
                     <h1>Theophilus U.</h1>
-                    <p className='position'>DevOps Engineer</p>
+                    <p className='position'>DevOps/SR Engineer</p>
                 </span>
                 <p className='details'>We denounce with righteous indignation dislike demoralized by the charms of pleasure</p>
                 <div className="call-to-action">
                     <button>Hire Me</button>
-                    <a href={Resume} download>Download Resume</a>
+                    <a href={Resume} download>View Resume</a>
                 </div>
             </div>
             <div className="user-image">

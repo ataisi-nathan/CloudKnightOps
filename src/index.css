@@ -753,6 +753,9 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 546px) {
+  header {
+    width: 100vw;
+  }
   .home {
     top: 0px;
     height: fit-content;

@@ -15,7 +15,7 @@ function About() {
                         <span>
                             <FaCheck color="#c9f31d" />
                         </span>
-                        <h4>Cloud Hosting</h4>
+                        <h4>Cloud Engineering</h4>
                     </div>
                     <div className="two">
                         <span>
@@ -27,13 +27,13 @@ function About() {
                         <span>
                             <FaCheck color="#c9f31d" />
                         </span>
-                        <h4>DevOps</h4>
+                        <h4>DevOps/SRE</h4>
                     </div>
                     <div className="four">
                         <span>
                             <FaCheck color="#c9f31d" />
                         </span>
-                        <h4>System Administrator</h4>
+                        <h4>Blockchain Infrastructure Engineering</h4>
                     </div>
                 </div>
                 <div className="support">
