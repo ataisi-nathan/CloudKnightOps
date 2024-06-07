@@ -8,6 +8,102 @@
   </head>
   <body>
     <div id="root"></div>
+    <div id="chat-widget">
+    <div id="chat-button" onclick="toggleChat()">
+      <img id="collapsed-image" src="https://659822afa32c74ea6645c83fd430b0a0.cdn.bubble.io/f1715248532595x988606488066525000/17b77fd9-ba72-410d-804b-173f6f7b6332.png" alt="Chat"/>
+      <img id="expanded-image" src="https://p135.p2.n0.cdn.getcloudapp.com/items/12u7oL8Z/f019c096-7527-4a55-99a3-032438e5c44a.png?source=viewer&v=aa4bd5010c3d89fc11ae6de29ca5a1f5" alt="Chat"/>
+    </div>
+    <iframe id="chat-iframe" src="" frameborder="0" title="Truce"></iframe>
+    <div id="close-button" onclick="toggleChat()">×</div>
+  </div>
+  <script>
+    function generateUniqueID() {
+      const timestamp = new Date().getTime();
+      const randomNumber = Math.floor(Math.random() * 1000000);
+      return timestamp + '-' + randomNumber;
+    }
+
+    function getOrCreateUniqueID() {
+      const storageKey = 'uniqueID';
+      let uniqueID = localStorage.getItem(storageKey);
+      if (!uniqueID) {
+        uniqueID = generateUniqueID();
+        localStorage.setItem(storageKey, uniqueID);
+      }
+      return uniqueID;
+    }
+
+    function setIframeSrcWithUniqueID() {
+      const uniqueID = getOrCreateUniqueID();
+      const chatIframe = document.getElementById('chat-iframe');
+      chatIframe.src = 'https://chat.rocketsmtp.io/version-test/chat-widget?attributes=1717011689812x867625436402942000&organization=1717011689812x229528608134135800&uid=' + encodeURIComponent(uniqueID);
+    }
+
+    function toggleChat() {
+      const chatIframe = document.getElementById('chat-iframe');
+      const collapsedImage = document.getElementById('collapsed-image');
+      const expandedImage = document.getElementById('expanded-image');
+      const chatButton = document.getElementById('chat-button');
+      const closeButton = document.getElementById('close-button');
+      const chatWidget = document.getElementById('chat-widget');
+      const body = document.body;
+      const isIframeVisible = chatIframe.style.display === 'block';
+
+      if (isMobile()) {
+        if (isIframeVisible) {
+          chatButton.style.display = 'block';
+          chatButton.classList.remove('expanded');
+          body.classList.remove('expanded');
+        } else {
+          chatButton.style.display = 'none';
+          chatButton.classList.add('expanded');
+          body.classList.add('expanded');
+        }
+      }
+
+      chatIframe.style.display = isIframeVisible ? 'none' : 'block';
+      collapsedImage.style.display = isIframeVisible ? 'block' : 'none';
+      expandedImage.style.display = isIframeVisible ? 'none' : 'block';
+      closeButton.style.display = isIframeVisible || !isMobile() ? 'none' : 'block';
+
+      if (isIframeVisible) {
+        chatWidget.style.width = '50px';
+        chatWidget.style.height = '50px';
+        chatIframe.classList.remove('expanded');
+      } else {
+        chatWidget.style.width = '350px';
+        chatWidget.style.height = '650px';
+        if (!isMobile()) {
+          chatIframe.classList.add('expanded');
+        }
+      }
+      if (isMobile()) {
+        chatIframe.style.width = isIframeVisible ? '350px' : '100%';
+        chatIframe.style.height = isIframeVisible ? '650px' : '100%';
+        chatIframe.style.position = 'fixed';
+        chatIframe.style.top = '0';
+        chatIframe.style.left = '0';
+        chatIframe.style.bottom = '0';
+        chatIframe.style.right = '0';
+        closeButton.style.position = 'fixed';
+        closeButton.style.top = isIframeVisible ? '0px' : '25px';
+        closeButton.style.right = isIframeVisible ? '0px' : '25px';
+      } else {
+        chatIframe.style.width = '350px';
+        chatIframe.style.height = 'calc(100% - 60px)';
+        chatIframe.style.position = 'absolute';
+        chatIframe.style.bottom = '60px';
+        chatIframe.style.right = '0';
+      }
+    }
+
+    function isMobile() {
+      const screenWidth = window.innerWidth;
+      return screenWidth <= 768;
+    }
+
+    setIframeSrcWithUniqueID();
+  </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
